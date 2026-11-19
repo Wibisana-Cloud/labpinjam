@@ -1,0 +1,5 @@
+{
+  "RPC_URL": "https://eth-sepolia.g.alchemy.com/v2/ISI_API_KEY",
+  "REOWN_PROJECT_ID": "ISI_PROJECT_ID",
+  "CONTRACT_ADDRESS": "0x18C597a50cA4A1F4b4c720d2D542C3e09D44f858"
+}
