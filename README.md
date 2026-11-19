@@ -2,8 +2,6 @@
 
 Aplikasi Flutter untuk pencatatan peminjaman alat laboratorium melalui smart contract **LogbookAlatV3** pada Ethereum Sepolia. Transaksi disetujui melalui Reown AppKit dan MetaMask; aplikasi tidak meminta private key atau seed phrase.
 
-Repository: [Wibisana-Cloud/labpinjam](https://github.com/Wibisana-Cloud/labpinjam).
-
 ## Fitur
 
 - Daftar alat, jumlah inventaris, detail, status tersedia/dipinjam, dan riwayat.
@@ -140,15 +138,6 @@ Pemeriksaan Dart serta pengujian format ABI dan sembilan kasus filter pada paket
 
 Pemantauan event memerlukan RPC yang mendukung filter Ethereum. Jika terputus, gunakan Sambung atau refresh manual. Hash pending belum disimpan setelah halaman ditutup. Admin tidak dapat diganti, arsip belum dapat dipulihkan, dan riwayat dibaca seluruhnya sehingga perlu pengembangan untuk skala besar. Blockchain mencatat aktivitas wallet, bukan bukti serah terima fisik atau kondisi alat.
 
-## Pengumpulan
-
-- Repository: https://github.com/Wibisana-Cloud/labpinjam
-- APK: ISI_LINK_APK
-- Video demo 3-5 menit: ISI_LINK_VIDEO
-- Laporan kelompok: PDF maksimal 5 halaman.
-- Jurnal Tonton: PDF individu 1-2 halaman.
-
-Video menunjukkan deployment, baca/tambah data melalui aplikasi, dan pemeriksaan transaksi di Etherscan. Identitas serta kontribusi anggota dicantumkan pada laporan terpisah.
 
 ## Keamanan dan sumber
 
