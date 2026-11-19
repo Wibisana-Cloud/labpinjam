@@ -28,9 +28,9 @@ Filter Pinjaman saya memakai alamat wallet yang dipilih melalui halaman Wallet. 
 
 [Lihat kontrak di Etherscan Sepolia](https://sepolia.etherscan.io/address/0x18C597a50cA4A1F4b4c720d2D542C3e09D44f858#code).
 
-Deployment telah dilaporkan berhasil melalui Remix. Verifikasi source di Etherscan belum dikonfirmasi berhasil; percobaan terakhir yang ditinjau gagal karena kode Dart ditempel pada kolom source Solidity. Untuk verifikasi, gunakan source Solidity yang sama dengan deployment dan pengaturan compiler, optimizer, serta EVM target yang sama. Tidak perlu deploy ulang hanya untuk memperbaiki pengajuan verifikasi.
+Deployment telah dilaporkan berhasil melalui Remix. Verifikasi source di Etherscan dikonfirmasi berhasil. Untuk verifikasi, gunakan source Solidity yang sama dengan deployment dan pengaturan compiler, optimizer, serta EVM target yang sama.
 
-Aplikasi memakai satu kontrak V3. Data V2 tidak otomatis dipindahkan; riwayat lama tetap berada pada deployment V2.
+Aplikasi memakai satu kontrak V3.
 
 ## Aturan smart contract
 
@@ -44,7 +44,7 @@ Aplikasi memakai satu kontrak V3. Data V2 tidak otomatis dipindahkan; riwayat la
 
 ## Versi lingkungan dan dependensi
 
-Dokumentasi pengembangan mencatat Flutter 3.44.9 dan Dart 3.12.2. Cocokkan versi SDK di komputer dengan kebutuhan `pubspec.yaml`.
+Dokumentasi pengembangan mencatat Flutter 3.44.9 dan Dart 3.12.2.
 
 | Paket | Batas versi pada pubspec.yaml |
 |---|---|
@@ -54,8 +54,6 @@ Dokumentasi pengembangan mencatat Flutter 3.44.9 dan Dart 3.12.2. Cocokkan versi
 | reown_appkit | ^1.9.0 |
 | cupertino_icons | ^1.0.8 |
 | flutter_lints | ^6.0.0 |
-
-`pubspec.lock` mencatat versi dependensi yang terpasang. Android memerlukan SDK dan JDK yang sesuai dengan konfigurasi proyek.
 
 ## Menjalankan aplikasi
 
@@ -94,8 +92,6 @@ flutter run -d DEVICE_ID --dart-define-from-file=config.local.json
 
 Ganti `DEVICE_ID` dengan ID dari `flutter devices`. Alternatifnya, pilih profil **LabPinjam (lokal)** di Run and Debug VS Code lalu tekan F5.
 
-`config.local.json` tidak diunggah ke Git. Nilai dibaca saat build; hentikan dan jalankan ulang aplikasi setelah mengubahnya. Hot reload tidak mengganti nilai dart-define. Parameter build bukan penyimpanan rahasia, sehingga jangan memuat private key atau seed phrase di dalamnya.
-
 ## Struktur utama
 
 ```text
@@ -130,7 +126,7 @@ Jika konfirmasi belum tersedia, gunakan Cek konfirmasi. Periksa aktivitas MetaMa
 flutter build apk --release --dart-define-from-file=config.local.json
 ```
 
-Hasil: `build/app/outputs/flutter-apk/app-release.apk`. Uji APK di HP sebelum diunggah ke Google Drive atau GitHub Releases. Jangan unggah seluruh folder build ke repository.
+Hasil: `build/app/outputs/flutter-apk/app-release.apk`. 
 
 ## Pengujian dan batasan
 
@@ -143,4 +139,4 @@ Pemantauan event memerlukan RPC yang mendukung filter Ethereum. Jika terputus, g
 
 Gunakan testnet Sepolia. Jangan unggah private key, seed phrase, atau config.local.json. Hindari data pribadi di blockchain publik.
 
-Pengembangan menggunakan Flutter, web3dart, Reown AppKit, MetaMask, dan Remix. Dokumentasi serta pembaruan kode dibantu AI; anggota kelompok tetap harus memahami kode yang dikumpulkan. Lengkapi sumber tutorial/kode yang benar-benar diadaptasi: ISI_SUMBER_KODE_ATAU_TUTORIAL.
+Pengembangan menggunakan Flutter, web3dart, Reown AppKit, MetaMask, dan Remix. Dokumentasi serta pembaruan kode dibantu AI.
