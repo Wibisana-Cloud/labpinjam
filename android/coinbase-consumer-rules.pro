@@ -1,0 +1,1 @@
+# File pengganti untuk consumer-rules.pro yang tidak disertakan paket.
